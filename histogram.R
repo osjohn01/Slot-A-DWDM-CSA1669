@@ -1,0 +1,8 @@
+workers<-c("OBED","ASHIK","AYUSH","SOORIYA")
+salary<-c(12000,1300,1400,1500)
+df<-data.frame(workers,salary)
+View(df)
+write.csv(df,"workers.csv")
+library(plotrix)
+hist(salary,radius=2,height=0.1)
+View(df)
